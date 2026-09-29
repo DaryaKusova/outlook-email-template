@@ -1,133 +1,171 @@
 <mjml lang="ru" dir="ltr">
   <mj-head>
-    <mj-title>Переходим на новый сервис — регистрация до [срок]</mj-title>
+    <mj-title>Документы и рабочие задачи теперь онлайн</mj-title>
     <mj-preview>Пройдите регистрацию до [срок] и заранее проверьте доступ к новому сервису.</mj-preview>
     <mj-breakpoint width="480px" />
     <mj-attributes>
       <mj-all font-family="Arial, Helvetica, sans-serif" />
-      <mj-section padding="0 36px" background-color="#FFFFFF" />
+      <mj-section padding="0 32px" background-color="#FFFFFF" />
       <mj-column padding="0" />
-      <mj-text padding="0" font-size="16px" line-height="26px" color="#263C45" />
-      <mj-divider padding="0" border-width="1px" border-color="#DCE7EB" />
-      <mj-button align="left" background-color="#087C9B" color="#FFFFFF" font-size="16px" font-weight="bold" border-radius="6px" inner-padding="15px 24px" padding="0" />
+      <mj-text padding="0" font-size="16px" line-height="25px" color="#263C45" />
+      <mj-table padding="0" font-size="16px" line-height="25px" color="#263C45" role="presentation" />
+      <mj-image padding="0" align="left" />
+      <mj-divider padding="0" border-width="1px" border-color="#E3EDF1" />
+      <mj-button align="left" background-color="#08758F" color="#FFFFFF" font-size="16px" font-weight="bold" border-radius="0" inner-padding="15px 24px" padding="0" />
     </mj-attributes>
     <mj-style inline="inline">
       p { margin: 0; }
+      h1, h2, h3 { margin: 0; font-family: Arial, Helvetica, sans-serif; }
       .copy-link { color: #08738E; text-decoration: underline; }
-      .list { margin: 0; padding-left: 22px; }
-      .list li { margin: 0 0 14px; padding-left: 4px; }
-      .list li:last-child { margin-bottom: 0; }
+      .copy-list { margin: 0; padding-left: 22px; }
+      .copy-list li { margin: 0 0 15px; padding-left: 4px; }
+      .copy-list li:last-child { margin-bottom: 0; }
+      .illustration img { display: block; max-width: 100%; }
     </mj-style>
     <mj-style>
       :root { color-scheme: light dark; supported-color-schemes: light dark; }
+      @media only screen and (max-width: 639px) {
+        .illustration img { width: 100% !important; height: auto !important; }
+      }
       @media only screen and (max-width: 479px) {
-        .gutter > table > tbody > tr > td { padding-left: 22px !important; padding-right: 22px !important; }
+        .gutter > table > tbody > tr > td { padding-left: 20px !important; padding-right: 20px !important; }
+        .registration-card > table > tbody > tr > td { padding-left: 18px !important; padding-right: 18px !important; }
         .hero-title h1 { font-size: 30px !important; line-height: 36px !important; }
+        .section-title { font-size: 21px !important; line-height: 28px !important; }
+        .date-card td { padding-left: 16px !important; padding-right: 16px !important; }
         .signature div { font-size: 14px !important; line-height: 23px !important; }
       }
       @media (prefers-color-scheme: dark) {
-        body, .email-background, .email-background > table { background-color: #13232A !important; }
-        .surface, .surface > table { background-color: #1C3039 !important; }
-        .tinted, .tinted > table { background-color: #193C49 !important; }
-        .deadline > table, .deadline > table > tbody > tr > td { background-color: #193C49 !important; }
-        .body-copy div, .body-copy h2, .signature div { color: #EBF2F5 !important; }
-        .hero-title div, .hero-title h1, .date-label div { color: #E4F7FC !important; }
-        .eyebrow div, .muted div { color: #B9D0DA !important; }
-        .copy-link { color: #68D2EC !important; }
+        body, .email-background, .email-background > table { background-color: #14262F !important; }
+        .surface, .surface > table { background-color: #1E323C !important; }
+        .footer, .footer > table { background-color: #192D37 !important; }
+        .date-card, .date-card td, .registration-card > table,
+        .registration-card > table > tbody > tr > td,
+        .registration-card > table > tbody > tr > td > table,
+        .section-badge { background-color: #214653 !important; }
+        .body-copy div, .body-copy p, .body-copy li, .body-copy h2,
+        .body-copy h3, .section-title, .signature div, .signature p { color: #EDF4F7 !important; }
+        .hero-title h1, .date-card td, .section-badge { color: #E6F8FC !important; }
+        .eyebrow div { color: #B9D5E0 !important; }
+        .copy-link { color: #76D6ED !important; }
       }
     </mj-style>
   </mj-head>
-  <mj-body width="600px" background-color="#EFF4F6" css-class="email-background">
-    <mj-section padding="14px 0" background-color="#EFF4F6" css-class="email-background">
+  <mj-body width="640px" background-color="#EDF3F6" css-class="email-background">
+    <mj-section padding="14px 0" background-color="#EDF3F6" css-class="email-background">
       <mj-column><mj-spacer height="0" /></mj-column>
     </mj-section>
 
-    <mj-section padding="30px 36px 26px" border-top="4px solid #29B6D8" border-radius="10px 10px 0 0" css-class="surface gutter">
+    <mj-section padding="28px 32px 0" border-top="7px solid #3EBDE6" css-class="surface gutter">
       <mj-column>
-        <mj-text font-size="24px" line-height="32px" font-weight="bold" color="#087C9B">ВАША КОМПАНИЯ</mj-text>
-        <mj-text css-class="eyebrow" padding="20px 0 0" font-size="11px" line-height="16px" letter-spacing="1.5px" font-weight="bold" color="#54717E">ИНФОРМАЦИЯ ДЛЯ СОТРУДНИКОВ</mj-text>
-      </mj-column>
-    </mj-section>
-
-    <mj-section background-color="#EAF7FB" padding="28px 36px 30px" css-class="tinted gutter">
-      <mj-column>
-        <mj-text css-class="hero-title" color="#133F50">
-          <h1 style="margin:0;font-size:34px;line-height:40px;font-weight:700;">Переходим на новый сервис</h1>
+        <mj-text font-size="24px" line-height="32px" font-weight="bold" color="#08738E">ВАША КОМПАНИЯ</mj-text>
+        <mj-text css-class="eyebrow" padding="25px 0 8px" font-size="11px" line-height="17px" letter-spacing="1.4px" font-weight="bold" color="#54717E">ИНФОРМАЦИЯ ДЛЯ СОТРУДНИКОВ</mj-text>
+        <mj-text css-class="hero-title" color="#173F50" padding="0 0 22px">
+          <h1 style="font-size:34px;line-height:41px;font-weight:700;">Документы и рабочие задачи<br />теперь онлайн</h1>
         </mj-text>
-        <mj-text padding="12px 0 0" css-class="date-label" font-size="16px" line-height="24px" font-weight="bold" color="#155B70">Начало работы: [дата запуска]</mj-text>
+        <mj-text css-class="body-copy" padding="0 0 22px" font-size="18px" line-height="27px" color="#477888">С [дата запуска] начинаем работу в [название сервиса]</mj-text>
+        <mj-image src="assets/digital-documents.png" width="576px" height="288px" css-class="illustration" alt="Коллеги работают с цифровыми документами на компьютере и телефоне" />
+        <mj-table padding="20px 0 0">
+          <tr><td>
+            <table class="date-card" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#EAF7FC" style="width:100%;background-color:#EAF7FC;border-left:4px solid #3EBDE6;">
+              <tr><td style="padding:18px 22px 3px;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:26px;color:#173F50;"><strong>Начинаем работу — [дата запуска]</strong></td></tr>
+              <tr><td style="padding:0 22px 18px;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#263C45;">Регистрация — <strong>до [срок регистрации] включительно</strong></td></tr>
+            </table>
+          </td></tr>
+        </mj-table>
       </mj-column>
     </mj-section>
 
-    <mj-section padding="30px 36px 0" css-class="surface gutter">
+    <mj-section padding="27px 32px 28px" css-class="surface gutter">
       <mj-column>
-        <mj-text css-class="body-copy" padding="0 0 16px"><p>Уважаемые коллеги!</p></mj-text>
+        <mj-text css-class="body-copy" padding="0 0 15px"><p><strong>Уважаемые коллеги!</strong></p></mj-text>
         <mj-text css-class="body-copy">
           <p><strong>С [дата запуска] мы начинаем использовать [название сервиса].</strong> Здесь кратко объясните, какие рабочие задачи он поможет решать и кому будет доступен.</p>
         </mj-text>
-        <mj-text css-class="body-copy" padding="28px 0 16px">
-          <h2 style="margin:0;font-size:21px;line-height:28px;font-weight:700;">Что станет удобнее</h2>
-        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="25px 32px 28px" border-top="1px solid #E3EDF1" css-class="surface gutter">
+      <mj-column>
+        <mj-table padding="0 0 20px">
+          <tr>
+            <td width="40" height="40" align="center" valign="middle" bgcolor="#EAF7FC" class="section-badge" style="width:40px;height:40px;background-color:#EAF7FC;color:#08738E;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:bold;line-height:40px;" aria-hidden="true">01</td>
+            <td valign="middle" style="padding-left:16px;"><h2 class="section-title" style="font-family:Arial,Helvetica,sans-serif;font-size:22px;line-height:29px;font-weight:700;color:#263C45;">Что станет удобнее</h2></td>
+          </tr>
+        </mj-table>
         <mj-text css-class="body-copy">
-          <ul class="list">
+          <ul class="copy-list">
             <li><strong>[Первая возможность].</strong> Опишите конкретную задачу, которую сотрудник сможет решить в сервисе.</li>
             <li><strong>[Вторая возможность].</strong> Укажите, как изменится привычный порядок работы.</li>
             <li><strong>[Третья возможность].</strong> Объясните, какую пользу получит сотрудник или команда.</li>
           </ul>
         </mj-text>
-        <mj-divider padding="28px 0" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="25px 32px 23px" border-top="1px solid #E3EDF1" css-class="surface gutter">
+      <mj-column>
+        <mj-table padding="0 0 20px">
+          <tr>
+            <td width="40" height="40" align="center" valign="middle" bgcolor="#EAF7FC" class="section-badge" style="width:40px;height:40px;background-color:#EAF7FC;color:#08738E;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:bold;line-height:40px;" aria-hidden="true">02</td>
+            <td valign="middle" style="padding-left:16px;"><h2 class="section-title" style="font-family:Arial,Helvetica,sans-serif;font-size:22px;line-height:29px;font-weight:700;color:#263C45;">Регистрация в сервисе</h2></td>
+          </tr>
+        </mj-table>
         <mj-text css-class="body-copy">
           <p><strong>Приглашения для подключения будут направлены [дата или период].</strong> Укажите, где сотрудник получит приглашение и что нужно подготовить заранее.</p>
-        </mj-text>
-        <mj-text css-class="body-copy" padding="26px 0 16px">
-          <h2 style="margin:0;font-size:21px;line-height:28px;font-weight:700;">Как подключиться</h2>
-        </mj-text>
-        <mj-text css-class="body-copy" padding="0 0 24px">
-          <ol class="list">
-            <li>Откройте персональное приглашение и выберите ссылку для регистрации.</li>
-            <li>Выполните шаги из инструкции [где найти инструкцию].</li>
-            <li>Войдите в сервис и проверьте доступ к нужным функциям.</li>
-          </ol>
         </mj-text>
       </mj-column>
     </mj-section>
 
     <mj-section css-class="surface gutter">
-      <mj-column background-color="#EAF7FB" border="1px solid #BBDDE8" border-radius="8px" padding="20px" css-class="deadline">
-        <mj-text css-class="body-copy" color="#133F50" font-size="17px" line-height="27px">
+      <mj-column background-color="#EAF7FC" border-top="3px solid #3EBDE6" padding="24px" css-class="registration-card">
+        <mj-text css-class="body-copy" padding="0 0 19px">
+          <h3 style="font-size:20px;line-height:28px;font-weight:700;">Как подключиться</h3>
+        </mj-text>
+        <mj-image src="assets/registration.png" width="528px" height="264px" css-class="illustration" padding="0 0 20px" alt="Электронное приглашение и подтверждение регистрации в сервисе" />
+        <mj-text css-class="body-copy">
+          <ol class="copy-list">
+            <li>Откройте персональное приглашение и выберите ссылку для регистрации.</li>
+            <li>Выполните шаги из инструкции [где найти инструкцию].</li>
+            <li>Войдите в сервис и проверьте доступ к нужным функциям.</li>
+          </ol>
+        </mj-text>
+        <mj-divider padding="22px 0 20px" border-color="#C6E5EF" />
+        <mj-text css-class="body-copy" color="#173F50">
           <p><strong>Завершите регистрацию до [срок регистрации] включительно и проверьте доступ перед началом работы.</strong></p>
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <mj-section padding="24px 36px 0" css-class="surface gutter">
+    <mj-section padding="27px 32px 29px" css-class="surface gutter">
       <mj-column>
         <mj-text css-class="body-copy">
           <p>После подключения открывайте сервис по ссылке <a class="copy-link" href="https://example.com" target="_blank"><strong>example.com</strong></a>. Здесь укажите доступные способы входа и поддерживаемые устройства.</p>
         </mj-text>
-        <mj-button href="https://example.com" padding="20px 0 28px">Открыть сервис</mj-button>
+        <mj-button href="https://example.com" padding="20px 0 26px">Открыть сервис</mj-button>
         <mj-text css-class="body-copy">
           <p>Если потребуется помощь, обратитесь в [название команды]: <strong>[контакт поддержки]</strong>. Укажите, какие сведения помогут быстрее решить вопрос.</p>
         </mj-text>
-        <mj-text css-class="body-copy" padding="24px 0 18px">
+        <mj-text css-class="body-copy" padding="23px 0 17px">
           <p><strong>Начинаем работу [дата запуска]. Убедитесь, что регистрация завершена и сервис доступен.</strong></p>
         </mj-text>
         <mj-text css-class="body-copy"><p>Спасибо за подготовку к переходу!</p></mj-text>
-        <mj-divider padding="28px 0" />
       </mj-column>
     </mj-section>
 
-    <mj-section padding="0 36px 32px" border-radius="0 0 10px 10px" css-class="surface gutter">
+    <mj-section padding="25px 32px 27px" border-top="1px solid #E3EDF1" background-color="#F5F8FA" css-class="footer gutter">
       <mj-column>
         <mj-text css-class="signature" font-size="14px" line-height="23px">
           <p>С уважением,</p>
           <p style="margin-top:10px;">[Должность или название команды]</p>
           <p>[Название организации]</p>
           <p style="margin-top:10px;font-size:16px;line-height:25px;"><strong>[Имя отправителя]</strong></p>
+          <p>[Контакт отправителя]</p>
         </mj-text>
-        <mj-text padding="18px 0 0" font-size="24px" line-height="32px" font-weight="bold" color="#087C9B">ВАША КОМПАНИЯ</mj-text>
+        <mj-text padding="17px 0 0" font-size="24px" line-height="32px" font-weight="bold" color="#08738E">ВАША КОМПАНИЯ</mj-text>
       </mj-column>
     </mj-section>
-    <mj-section padding="16px 0" background-color="#EFF4F6" css-class="email-background">
+    <mj-section padding="14px 0" background-color="#EDF3F6" css-class="email-background">
       <mj-column><mj-spacer height="0" /></mj-column>
     </mj-section>
   </mj-body>
