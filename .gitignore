@@ -1,0 +1,9 @@
+node_modules/
+.qa/
+hrlink-email/
+*.zip
+*.oft
+*.eml
+*.msg
+.env
+.env.*

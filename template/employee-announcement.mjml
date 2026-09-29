@@ -1,0 +1,134 @@
+<mjml lang="ru" dir="ltr">
+  <mj-head>
+    <mj-title>Переходим на новый сервис — регистрация до [срок]</mj-title>
+    <mj-preview>Пройдите регистрацию до [срок] и заранее проверьте доступ к новому сервису.</mj-preview>
+    <mj-breakpoint width="480px" />
+    <mj-attributes>
+      <mj-all font-family="Arial, Helvetica, sans-serif" />
+      <mj-section padding="0 36px" background-color="#FFFFFF" />
+      <mj-column padding="0" />
+      <mj-text padding="0" font-size="16px" line-height="26px" color="#263C45" />
+      <mj-divider padding="0" border-width="1px" border-color="#DCE7EB" />
+      <mj-button align="left" background-color="#087C9B" color="#FFFFFF" font-size="16px" font-weight="bold" border-radius="6px" inner-padding="15px 24px" padding="0" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      p { margin: 0; }
+      .copy-link { color: #08738E; text-decoration: underline; }
+      .list { margin: 0; padding-left: 22px; }
+      .list li { margin: 0 0 14px; padding-left: 4px; }
+      .list li:last-child { margin-bottom: 0; }
+    </mj-style>
+    <mj-style>
+      :root { color-scheme: light dark; supported-color-schemes: light dark; }
+      @media only screen and (max-width: 479px) {
+        .gutter > table > tbody > tr > td { padding-left: 22px !important; padding-right: 22px !important; }
+        .hero-title h1 { font-size: 30px !important; line-height: 36px !important; }
+        .signature div { font-size: 14px !important; line-height: 23px !important; }
+      }
+      @media (prefers-color-scheme: dark) {
+        body, .email-background, .email-background > table { background-color: #13232A !important; }
+        .surface, .surface > table { background-color: #1C3039 !important; }
+        .tinted, .tinted > table { background-color: #193C49 !important; }
+        .deadline > table, .deadline > table > tbody > tr > td { background-color: #193C49 !important; }
+        .body-copy div, .body-copy h2, .signature div { color: #EBF2F5 !important; }
+        .hero-title div, .hero-title h1, .date-label div { color: #E4F7FC !important; }
+        .eyebrow div, .muted div { color: #B9D0DA !important; }
+        .copy-link { color: #68D2EC !important; }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body width="600px" background-color="#EFF4F6" css-class="email-background">
+    <mj-section padding="14px 0" background-color="#EFF4F6" css-class="email-background">
+      <mj-column><mj-spacer height="0" /></mj-column>
+    </mj-section>
+
+    <mj-section padding="30px 36px 26px" border-top="4px solid #29B6D8" border-radius="10px 10px 0 0" css-class="surface gutter">
+      <mj-column>
+        <mj-text font-size="24px" line-height="32px" font-weight="bold" color="#087C9B">ВАША КОМПАНИЯ</mj-text>
+        <mj-text css-class="eyebrow" padding="20px 0 0" font-size="11px" line-height="16px" letter-spacing="1.5px" font-weight="bold" color="#54717E">ИНФОРМАЦИЯ ДЛЯ СОТРУДНИКОВ</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#EAF7FB" padding="28px 36px 30px" css-class="tinted gutter">
+      <mj-column>
+        <mj-text css-class="hero-title" color="#133F50">
+          <h1 style="margin:0;font-size:34px;line-height:40px;font-weight:700;">Переходим на новый сервис</h1>
+        </mj-text>
+        <mj-text padding="12px 0 0" css-class="date-label" font-size="16px" line-height="24px" font-weight="bold" color="#155B70">Начало работы: [дата запуска]</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="30px 36px 0" css-class="surface gutter">
+      <mj-column>
+        <mj-text css-class="body-copy" padding="0 0 16px"><p>Уважаемые коллеги!</p></mj-text>
+        <mj-text css-class="body-copy">
+          <p><strong>С [дата запуска] мы начинаем использовать [название сервиса].</strong> Здесь кратко объясните, какие рабочие задачи он поможет решать и кому будет доступен.</p>
+        </mj-text>
+        <mj-text css-class="body-copy" padding="28px 0 16px">
+          <h2 style="margin:0;font-size:21px;line-height:28px;font-weight:700;">Что станет удобнее</h2>
+        </mj-text>
+        <mj-text css-class="body-copy">
+          <ul class="list">
+            <li><strong>[Первая возможность].</strong> Опишите конкретную задачу, которую сотрудник сможет решить в сервисе.</li>
+            <li><strong>[Вторая возможность].</strong> Укажите, как изменится привычный порядок работы.</li>
+            <li><strong>[Третья возможность].</strong> Объясните, какую пользу получит сотрудник или команда.</li>
+          </ul>
+        </mj-text>
+        <mj-divider padding="28px 0" />
+        <mj-text css-class="body-copy">
+          <p><strong>Приглашения для подключения будут направлены [дата или период].</strong> Укажите, где сотрудник получит приглашение и что нужно подготовить заранее.</p>
+        </mj-text>
+        <mj-text css-class="body-copy" padding="26px 0 16px">
+          <h2 style="margin:0;font-size:21px;line-height:28px;font-weight:700;">Как подключиться</h2>
+        </mj-text>
+        <mj-text css-class="body-copy" padding="0 0 24px">
+          <ol class="list">
+            <li>Откройте персональное приглашение и выберите ссылку для регистрации.</li>
+            <li>Выполните шаги из инструкции [где найти инструкцию].</li>
+            <li>Войдите в сервис и проверьте доступ к нужным функциям.</li>
+          </ol>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section css-class="surface gutter">
+      <mj-column background-color="#EAF7FB" border="1px solid #BBDDE8" border-radius="8px" padding="20px" css-class="deadline">
+        <mj-text css-class="body-copy" color="#133F50" font-size="17px" line-height="27px">
+          <p><strong>Завершите регистрацию до [срок регистрации] включительно и проверьте доступ перед началом работы.</strong></p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="24px 36px 0" css-class="surface gutter">
+      <mj-column>
+        <mj-text css-class="body-copy">
+          <p>После подключения открывайте сервис по ссылке <a class="copy-link" href="https://example.com" target="_blank"><strong>example.com</strong></a>. Здесь укажите доступные способы входа и поддерживаемые устройства.</p>
+        </mj-text>
+        <mj-button href="https://example.com" padding="20px 0 28px">Открыть сервис</mj-button>
+        <mj-text css-class="body-copy">
+          <p>Если потребуется помощь, обратитесь в [название команды]: <strong>[контакт поддержки]</strong>. Укажите, какие сведения помогут быстрее решить вопрос.</p>
+        </mj-text>
+        <mj-text css-class="body-copy" padding="24px 0 18px">
+          <p><strong>Начинаем работу [дата запуска]. Убедитесь, что регистрация завершена и сервис доступен.</strong></p>
+        </mj-text>
+        <mj-text css-class="body-copy"><p>Спасибо за подготовку к переходу!</p></mj-text>
+        <mj-divider padding="28px 0" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0 36px 32px" border-radius="0 0 10px 10px" css-class="surface gutter">
+      <mj-column>
+        <mj-text css-class="signature" font-size="14px" line-height="23px">
+          <p>С уважением,</p>
+          <p style="margin-top:10px;">[Должность или название команды]</p>
+          <p>[Название организации]</p>
+          <p style="margin-top:10px;font-size:16px;line-height:25px;"><strong>[Имя отправителя]</strong></p>
+        </mj-text>
+        <mj-text padding="18px 0 0" font-size="24px" line-height="32px" font-weight="bold" color="#087C9B">ВАША КОМПАНИЯ</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="16px 0" background-color="#EFF4F6" css-class="email-background">
+      <mj-column><mj-spacer height="0" /></mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
