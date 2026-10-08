@@ -1,6 +1,6 @@
 <mjml lang="ru" dir="ltr">
   <mj-head>
-    <mj-title>Обучение для ваших рабочих задач</mj-title>
+    <mj-title>Навыки сами себя не прокачают — заявки на обучение</mj-title>
     <mj-preview>Выберите формат обучения и подготовьте запрос в [название сервиса].</mj-preview>
     <mj-breakpoint width="480px" />
     <mj-attributes>
@@ -66,7 +66,7 @@
         <mj-text font-size="24px" line-height="32px" font-weight="bold" color="#08738E">ВАША КОМПАНИЯ</mj-text>
         <mj-text css-class="eyebrow" padding="25px 0 8px" font-size="11px" line-height="17px" letter-spacing="1.4px" font-weight="bold" color="#54717E">ОБУЧЕНИЕ И РАЗВИТИЕ</mj-text>
         <mj-text css-class="hero-title" color="#173F50" padding="0 0 16px">
-          <h1 style="font-size:34px;line-height:41px;font-weight:700;">Обучение для ваших<br />рабочих задач</h1>
+          <h1 style="font-size:34px;line-height:41px;font-weight:700;">Навыки сами себя<br />не прокачают</h1>
         </mj-text>
         <mj-text css-class="body-copy" padding="0 0 22px" font-size="18px" line-height="27px" color="#477888">Заявки на обучение — через [название сервиса]</mj-text>
         <mj-image src="assets/learning-team.png" width="576px" height="288px" css-class="illustration" alt="Иллюстрация совместного обучения: команда обсуждает рабочие задачи" />
