@@ -1,0 +1,155 @@
+<mjml lang="ru" dir="ltr">
+  <mj-head>
+    <mj-title>Период отсутствия: [даты] — контакты команды</mj-title>
+    <mj-preview>[Период отсутствия]. Контакты коллег по рабочим вопросам. Возвращение: [дата выхода].</mj-preview>
+    <mj-breakpoint width="480px" />
+    <mj-attributes>
+      <mj-all font-family="Arial, Helvetica, sans-serif" />
+      <mj-section padding="0 32px" background-color="#FFFFFF" />
+      <mj-column padding="0" />
+      <mj-text padding="0" font-size="16px" line-height="25px" color="#263C45" />
+      <mj-table padding="0" font-size="16px" line-height="25px" color="#263C45" role="presentation" />
+      <mj-image padding="0" align="left" />
+      <mj-divider padding="0" border-width="1px" border-color="#E3EDF1" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      p { margin: 0; }
+      h1, h2, h3 { margin: 0; font-family: Arial, Helvetica, sans-serif; }
+      .hero-illustration img, .closing-illustration img { display: block; max-width: 100%; }
+    </mj-style>
+    <mj-style>
+      :root { color-scheme: light dark; supported-color-schemes: light dark; }
+      @media only screen and (max-width: 639px) {
+        .hero-illustration img { width: 100% !important; height: auto !important; }
+        .closing-illustration img { height: auto !important; }
+      }
+      @media only screen and (max-width: 479px) {
+        .gutter > table > tbody > tr > td { padding-left: 20px !important; padding-right: 20px !important; }
+        .hero-title h1 { font-size: 30px !important; line-height: 36px !important; }
+        .section-title { font-size: 21px !important; line-height: 28px !important; }
+        .date-card td { padding-left: 14px !important; padding-right: 14px !important; }
+        .date-number { font-size: 18px !important; line-height: 25px !important; }
+        .signature div { font-size: 14px !important; line-height: 23px !important; }
+      }
+      @media (prefers-color-scheme: dark) {
+        body, .email-background, .email-background > table { background-color: #14262F !important; }
+        .surface, .surface > table { background-color: #1E323C !important; }
+        .footer, .footer > table { background-color: #192D37 !important; }
+        .date-card, .date-card td { background-color: #214653 !important; }
+        .body-copy div, .body-copy p, .body-copy h2,
+        .body-copy h3, .section-title, .signature div, .signature p { color: #EDF4F7 !important; }
+        .hero-title h1, .date-number { color: #E6F8FC !important; }
+        .date-label { color: #C2DCE6 !important; }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body width="640px" background-color="#EDF3F6" css-class="email-background">
+    <mj-section padding="14px 0" background-color="#EDF3F6" css-class="email-background">
+      <mj-column><mj-spacer height="0" /></mj-column>
+    </mj-section>
+
+    <mj-section padding="28px 32px 0" border-top="7px solid #3EBDE6" css-class="surface gutter">
+      <mj-column>
+        <mj-text font-size="24px" line-height="32px" font-weight="bold" color="#08738E">ВАША КОМПАНИЯ</mj-text>
+        <mj-text css-class="hero-title" color="#173F50" padding="25px 0 22px">
+          <h1 style="font-size:34px;line-height:41px;font-weight:700;">Я в отпуске.<br />Команда на связи</h1>
+        </mj-text>
+        <mj-image src="assets/hr-team.png" width="576px" height="288px" css-class="hero-illustration" alt="Иллюстрация: HR-команда помогает коллегам с рабочими вопросами" />
+        <mj-table padding="20px 0 0">
+          <tr><td>
+            <table class="date-card" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#EAF7FC" style="width:100%;background-color:#EAF7FC;border-left:4px solid #3EBDE6;">
+              <tr>
+                <td width="50%" valign="top" style="width:50%;padding:18px 20px;">
+                  <p class="date-number" style="font-family:Arial,Helvetica,sans-serif;font-size:19px;line-height:27px;font-weight:700;color:#173F50;">[Даты отпуска]</p>
+                  <p class="date-label" style="margin-top:4px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#47717F;">В отпуске</p>
+                </td>
+                <td width="50%" valign="top" style="width:50%;padding:18px 20px;border-left:1px solid #C9E8F1;">
+                  <p class="date-number" style="font-family:Arial,Helvetica,sans-serif;font-size:19px;line-height:27px;font-weight:700;color:#173F50;">[Дата выхода]</p>
+                  <p class="date-label" style="margin-top:4px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#47717F;">Снова в работе</p>
+                </td>
+              </tr>
+            </table>
+          </td></tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="27px 32px 26px" css-class="surface gutter">
+      <mj-column>
+        <mj-text css-class="body-copy" padding="0 0 15px"><p><strong>Коллеги, добрый день!</strong></p></mj-text>
+        <mj-text css-class="body-copy" padding="0 0 15px">
+          <p>С <strong>[дата начала]</strong> по <strong>[дата окончания]</strong> я буду в отпуске. Возвращаюсь к работе <strong>[дата выхода]</strong>.</p>
+        </mj-text>
+        <mj-text css-class="body-copy">
+          <p>Ниже приведён пример распределения HR-направлений. Перед отправкой замените имена и уточните зоны ответственности коллег:</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="25px 32px 26px" border-top="1px solid #E3EDF1" css-class="surface gutter">
+      <mj-column>
+        <mj-text css-class="body-copy" padding="0 0 22px">
+          <h2 class="section-title" style="font-size:22px;line-height:29px;font-weight:700;">К кому обращаться</h2>
+        </mj-text>
+        <mj-text css-class="body-copy" padding="0 0 5px" color="#173F50">
+          <h3 style="font-size:18px;line-height:26px;font-weight:700;">[Имя коллеги 1]</h3>
+        </mj-text>
+        <mj-text css-class="body-copy"><p>Компенсации и льготы, вопросы оплаты труда, премирования и ФОТ.</p></mj-text>
+        <mj-divider padding="18px 0" />
+
+        <mj-text css-class="body-copy" padding="0 0 5px" color="#173F50">
+          <h3 style="font-size:18px;line-height:26px;font-weight:700;">[Имя коллеги 2]</h3>
+        </mj-text>
+        <mj-text css-class="body-copy"><p>Кадровое делопроизводство, оформление сотрудников и кадровые документы.</p></mj-text>
+        <mj-divider padding="18px 0" />
+
+        <mj-text css-class="body-copy" padding="0 0 5px" color="#173F50">
+          <h3 style="font-size:18px;line-height:26px;font-weight:700;">[Имя коллеги 3]</h3>
+        </mj-text>
+        <mj-text css-class="body-copy"><p>Подбор персонала, вакансии, кандидаты и организация выхода новых сотрудников.</p></mj-text>
+        <mj-divider padding="18px 0" />
+
+        <mj-text css-class="body-copy" padding="0 0 5px" color="#173F50">
+          <h3 style="font-size:18px;line-height:26px;font-weight:700;">[Имя коллеги 4]</h3>
+        </mj-text>
+        <mj-text css-class="body-copy"><p>Обучение, адаптация и развитие персонала.</p></mj-text>
+        <mj-divider padding="18px 0" />
+
+        <mj-text css-class="body-copy" padding="0 0 5px" color="#173F50">
+          <h3 style="font-size:18px;line-height:26px;font-weight:700;">[Имя коллеги 5]</h3>
+        </mj-text>
+        <mj-text css-class="body-copy"><p>Охрана труда и пожарная безопасность.</p></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="24px 32px 27px" border-top="1px solid #E3EDF1" css-class="surface gutter">
+      <mj-column>
+        <mj-text css-class="body-copy" padding="0 0 15px">
+          <p>Коллеги помогут с текущими задачами и вопросами в рамках своих направлений.</p>
+        </mj-text>
+        <mj-text css-class="body-copy" padding="0 0 22px">
+          <p><strong>Прошу не откладывать рабочие вопросы до моего возвращения</strong> — команда продолжает работать в обычном режиме.</p>
+        </mj-text>
+        <mj-image src="assets/back-at-work.png" width="288px" height="144px" css-class="closing-illustration" padding="0 0 20px" alt="Иллюстрация возвращения к работе: рабочий стол и календарь" />
+        <mj-text css-class="body-copy">
+          <p><strong>До встречи [дата выхода]!</strong> Хороших всем рабочих дней и продуктивной работы&#160;😊</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="25px 32px 27px" border-top="1px solid #E3EDF1" background-color="#F5F8FA" css-class="footer gutter">
+      <mj-column>
+        <mj-text css-class="signature" font-size="14px" line-height="23px">
+          <p>С уважением,</p>
+          <p style="margin-top:10px;">[Должность или название команды]</p>
+          <p>[Название организации]</p>
+          <p style="margin-top:10px;font-size:16px;line-height:25px;"><strong>[Имя отправителя]</strong></p>
+        </mj-text>
+        <mj-text padding="17px 0 0" font-size="24px" line-height="32px" font-weight="bold" color="#08738E">ВАША КОМПАНИЯ</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="14px 0" background-color="#EDF3F6" css-class="email-background">
+      <mj-column><mj-spacer height="0" /></mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

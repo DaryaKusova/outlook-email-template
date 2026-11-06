@@ -2,6 +2,7 @@ node_modules/
 .qa/
 hrlink-email/
 training-email/
+vacation-email/
 *.zip
 *.oft
 *.eml

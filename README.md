@@ -25,6 +25,12 @@
 
 Новые иллюстрации также имеют размер 1774 × 887 px. Персонажи и элементы интерфейса вымышлены. Примеры текста обозначены как примеры; готовых курсов, одобрения заявки или результатов обучения они не подтверждают.
 
+## Уведомление об отсутствии
+
+Третий шаблон — `template/absence-notice.mjml` и собранный `template/absence-notice.html`. В нём есть период отсутствия, дата возвращения и пять блоков контактов. Замените все заполнители дат, имён, организации и подписи. HR-направления приведены как адаптируемый пример: перед отправкой уточните фактические зоны ответственности.
+
+Иллюстрации `template/assets/hr-team.png` и `template/assets/back-at-work.png` созданы встроенным image_gen; промпты сохранены в `template/assets/prompts-absence.md`. Персонажи вымышлены, календарь не содержит дат. Для локального `.oft` используйте код ниже с файлом `absence-notice.html`, выходным именем `absence-notice.oft` и парами File/Cid `hr-team.png` / `hr-team`, `back-at-work.png` / `back-at-work`.
+
 ## Установка и сборка
 
 Требуется Node.js 20 или новее. Из папки проекта выполните:
@@ -38,6 +44,12 @@ npm run build
 
 ```sh
 npx mjml template/training-request.mjml -o template/training-request.html --config.minify=true --config.validationLevel=strict
+```
+
+Для уведомления об отсутствии:
+
+```sh
+npx mjml template/absence-notice.mjml -o template/absence-notice.html --config.minify=true --config.validationLevel=strict
 ```
 
 MJML установлен локально, версия закреплена в `package-lock.json`. Сборка использует строгую проверку MJML и минификацию HTML. После изменения текста повторите сборку и откройте HTML в браузере. Сохраните папку `assets` рядом с HTML: изображения подключены по относительным путям для локального просмотра.
